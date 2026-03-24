@@ -1,5 +1,5 @@
 import pytest
-from app.calculator import add, subtract, multiply, divide, percentage
+from app.calculator import add, subtract, multiply, divide, percentage, power
 
 
 def test_add():
@@ -22,6 +22,10 @@ def test_multiply():
 def test_divide():
     assert divide(10, 2) == 5
     assert divide(7, 2) == 3.5
+
+def test_power():
+    assert power(2, 2) == 4
+    assert power(3, 3) == 27
 
 
 def test_divide_by_zero():
